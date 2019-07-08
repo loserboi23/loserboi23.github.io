@@ -24,16 +24,18 @@ body
 
 nav
 {
+	height: 100%;
 	background-color: #70877f;
 	display: flexbox;
 	font-size: 40px;
-	max-height: 100%;
 	grid-row: 1/3;
+	padding: 10px;
 }
 
 .nav-element
 {
 	/* padding: 10px 10px 10px 10px; */
+	text-align: center;
 	border: 5px solid #c4a77d; 
 	margin: 10px;
 }
@@ -59,22 +61,31 @@ main
 
 h1
 {
-	color: #820a48;
+	color: #ef946c;
+	font-style: italic;
+	font-size: 100px;
+	text-align: center;
 }
 
 body p 
 {
 	color:#c4a77d;
 	font-size: 45px;
-	border: 4px solid#70877f;
-	margin: 5px;
+	/* border: 4px solid #ef946c; */
+	margin: 70px;
+	padding: 5px;
 }
 
 footer
 {
 	width: 100%;
 	height: 100%;
-
+	padding: 10px;
 	grid-column: 2/3;
 	background-color: #820a48;
+	font-size: 2em;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 }
