@@ -19,7 +19,7 @@ body
 	background-color: #4c515a;
 	display: grid;
 	grid-template-columns: 1fr 9fr;
-	grid-template-rows: 90% 10%;
+	grid-template-rows: 9fr 1fr;
 }
 
 nav
@@ -51,21 +51,30 @@ img
 	object-fit: cover;
 }
 
+main
+{
+	height: 100%;
+	width: 100%;
+}
+
 h1
 {
-	color: #70877f;
-	border: 4px solid #c4a77d; 
-	background-color:  #ef946c;
+	color: #820a48;
 }
 
 body p 
 {
-	color: #ef946c;
+	color:#c4a77d;
 	font-size: 45px;
+	border: 4px solid#70877f;
+	margin: 5px;
 }
 
 footer
 {
+	width: 100%;
+	height: 100%;
+
 	grid-column: 2/3;
 	background-color: #820a48;
 }
