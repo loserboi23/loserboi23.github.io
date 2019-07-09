@@ -18,39 +18,43 @@ body
 {
 	background-color: #4c515a;
 	display: grid;
-	grid-template-columns: 1fr 9fr;
-	grid-template-rows: 9fr 1fr;
+	grid-template-rows: 1fr 8fr 1fr;
 }
 
 nav
 {
-	height: 100%;
 	background-color: #70877f;
-	display: flexbox;
 	font-size: 40px;
-	grid-row: 1/3;
 	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
 }
 
 .nav-element
 {
 	/* padding: 10px 10px 10px 10px; */
 	text-align: center;
-	border: 5px solid #c4a77d; 
 	margin: 10px;
+	overflow: hidden;
+	max-height: 300px;
+	max-width: 300px;
 }
 
 button
 {
-	height: 100%;
-	width: 100%;
+	height: 100px;
+	width: 300px;
+	border: 5px solid #c4a77d;
 }
 
 img
-{
+{	
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+
+	max-height: 300px;
+	max-width: 300px;
+	object-fit: fill;
 }
 
 main
@@ -81,9 +85,8 @@ footer
 	width: 100%;
 	height: 100%;
 	padding: 10px;
-	grid-column: 2/3;
 	background-color: #820a48;
-	font-size: 2em;
+	font-size: 4em;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
