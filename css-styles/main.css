@@ -7,6 +7,13 @@
 #820a48
 */
 
+:root
+{
+	--border: 5px; 
+	--outline: 5px; 
+	--margin: 20px;
+	--padding: 5px; 
+}
 
 html, body
 {
@@ -23,7 +30,7 @@ body
 
 nav
 {
-	background-color: #c4a77d;
+	background-color: gray;
 	font-size: 30px;
 	display: grid;
 	grid-template-columns: repeat(10,1fr);
@@ -35,7 +42,7 @@ nav
 	/* padding: 10px 10px 10px 10px; */
 	text-align: center;
 	overflow: initial;
-	max-height: 100%;
+	max-height: 150px;
 	max-width: 100%;
 
 	align-self: flex-end;
@@ -45,32 +52,39 @@ nav
 .nav-element button
 {
 	text-align: center;
-	height: 20%;
 	width: 100%;
-	border-radius: 30px 30px 0px 0px;
-	background-color: #4c515a;
+	border-radius: 40px 40px 0px 0px;
+	background-color:#820a48;
 	border: 0px;
-	border-left: 10px solid #c4a77d;;
 	border-style: outset;
+}
+
+#current button
+{
+	background-color: #4c515a;
 }
 
 .nav-element img
 {	
-	grid-row-start: 4;
 	height: 100%;
 	width: 100%;
-	max-height: 300px;
-	max-width: 300px;
-	object-fit: fill;
+	max-height: 25px;
+	max-width: 25px;
 
+	object-fit: scale-down;
 }
 
 main
 {
 	height: calc(100% - 40px);
 	width: calc(100% - 40px);
-	outline: 5px ridge #70877f;
-	margin: 20px;
+	outline: var(--outline) ridge #70877f;
+	margin: var(--margin);
+
+	
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+
 }
 
 h1
@@ -87,15 +101,18 @@ body p
 	font-size: 45px;
 	/* border: 4px solid #ef946c; */
 	margin: 70px;
-	padding: 5px;
+	padding: var(--padding);
 }
 
 footer
 {
-	width: 100%;
+	width: calc(100% - 2* var(--border) - 2*var(--margin));
 	height: 100px;
-	background-color: #70877f;
+	background-color: #4c515a;
 	font-size: 2em;
+
+	border-top: var(--border) double  #70877f;
+	margin: var(--margin);
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
