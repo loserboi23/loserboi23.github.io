@@ -13,6 +13,13 @@
 	--outline: 5px; 
 	--margin: 20px;
 	--padding: 5px; 
+
+	--background: #1F9212;
+	--navigator:#4B4755;
+	--text: #19151A;
+	--heading: #56565E;
+	--secondary: #2B718B;
+
 }
 
 html, body
@@ -23,14 +30,14 @@ html, body
 
 body
 {
-	background-color: #4c515a;
+	background-color: var(--background);
 	display: grid;
 	grid-template-rows: 1fr 8fr 1fr;
 }
 
 nav
 {
-	background-color: gray;
+	background-color: var(--navigator);
 	font-size: 30px;
 	display: grid;
 	grid-template-columns: repeat(10,1fr);
@@ -54,14 +61,14 @@ nav
 	text-align: center;
 	width: 100%;
 	border-radius: 40px 40px 0px 0px;
-	background-color:#820a48;
+	background-color: var(--secondary);
 	border: 0px;
 	border-style: outset;
 }
 
 #current button
 {
-	background-color: #4c515a;
+	background-color: var(--background);
 }
 
 .nav-element img
@@ -78,9 +85,10 @@ main
 {
 	height: calc(100% - 40px);
 	width: calc(100% - 40px);
-	outline: var(--outline) ridge #70877f;
+	outline: var(--outline) ridge var(--background);
+	padding: 0px;
 	margin: var(--margin);
-
+	background-color: var(--background);
 	
 	display: grid;
 	grid-template-columns: 2fr 8fr;
@@ -89,7 +97,7 @@ main
 
 h1
 {
-	color: #ef946c;
+	color: var(--heading);
 	font-style: italic;
 	font-size: 100px;
 	text-align: center;
@@ -97,7 +105,7 @@ h1
 
 body p 
 {
-	color:#c4a77d;
+	color: var(--text);
 	font-size: 45px;
 	/* border: 4px solid #ef946c; */
 	margin: 70px;
@@ -108,10 +116,10 @@ footer
 {
 	width: calc(100% - 2* var(--border) - 2*var(--margin));
 	height: 100px;
-	background-color: #4c515a;
+	background-color: var(--background);
 	font-size: 2em;
 
-	border-top: var(--border) double  #70877f;
+	border-top: var(--border) double var(--secondary);
 	margin: var(--margin);
 
 	display: grid;
