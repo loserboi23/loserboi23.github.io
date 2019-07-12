@@ -99,15 +99,19 @@ nav
 	object-fit: scale-down;
 }
 
+.sidemain img
+{
+	mask-image: radial-gradient();
+}
+
 main
 {
-	height: calc(100% - 40px);
-	width: calc(100% - 40px);
+	height: calc(100% - 2 * var(--margin) - 2*(var(--padding)));
+	width: calc(100% - 2 * var(--margin) - 2*(var(--padding)));
 	outline: var(--outline) ridge var(--primary);
-	padding: 0px;
+	padding: -var(--padding);
 	margin: var(--margin);
 	background-color: var(--primary);
-	
 	display: grid;
 	grid-template-columns: 2fr 8fr;
 
