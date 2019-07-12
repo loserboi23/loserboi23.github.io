@@ -140,7 +140,7 @@ footer
 	background-color: var(--primary);
 	font-size: 2em;
 
-	border-top: var(--border) dashed var(--primary);
+	border-top: var(--border) outset var(--primary);
 	margin: var(--margin);
 
 	display: grid;
