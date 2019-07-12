@@ -10,7 +10,7 @@ if (pathname == "/projects.html")
 }
 else if (pathname == "/contact.html")
 {
-    var tritary = style.getPropertyValue('--tritary');
+    var tritary = styles.getPropertyValue('--tritary');
     document.documentElement.style.setProperty('--primary',tritary);   
 }
 else
