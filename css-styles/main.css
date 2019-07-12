@@ -7,6 +7,12 @@
 #820a48
 */
 
+@keyframes navanimate
+{
+
+
+}
+
 :root
 {
 	--border: 5px; 
@@ -14,11 +20,15 @@
 	--margin: 20px;
 	--padding: 5px; 
 
-	--background: #1F9212;
 	--navigator:#4B4755;
 	--text: #19151A;
-	--heading: #56565E;
+
+
+	--primary: #1F9212;
 	--secondary: #2B718B;
+	--tritary: rgb(4, 168, 141);
+
+	--heading: white;
 
 }
 
@@ -30,7 +40,7 @@ html, body
 
 body
 {
-	background-color: var(--background);
+	background-color: var(--primary);
 	display: grid;
 	grid-template-rows: 1fr 8fr 1fr;
 }
@@ -51,7 +61,6 @@ nav
 	overflow: initial;
 	max-height: 150px;
 	max-width: 100%;
-
 	align-self: flex-end;
 	
 }
@@ -61,14 +70,23 @@ nav
 	text-align: center;
 	width: 100%;
 	border-radius: 40px 40px 0px 0px;
-	background-color: var(--secondary);
 	border: 0px;
 	border-style: outset;
 }
 
-#current button
+#main-button
 {
-	background-color: var(--background);
+	background-color: var(--primary);
+}
+
+#project-button
+{
+	background-color: var(--secondary);
+}
+
+#contact-button
+{
+	background-color: var(--tritary);
 }
 
 .nav-element img
@@ -85,10 +103,10 @@ main
 {
 	height: calc(100% - 40px);
 	width: calc(100% - 40px);
-	outline: var(--outline) ridge var(--background);
+	outline: var(--outline) ridge var(--primary);
 	padding: 0px;
 	margin: var(--margin);
-	background-color: var(--background);
+	background-color: var(--primary);
 	
 	display: grid;
 	grid-template-columns: 2fr 8fr;
@@ -116,10 +134,10 @@ footer
 {
 	width: calc(100% - 2* var(--border) - 2*var(--margin));
 	height: 100px;
-	background-color: var(--background);
+	background-color: var(--primary);
 	font-size: 2em;
 
-	border-top: var(--border) double var(--secondary);
+	border-top: var(--border) dashed var(--primary);
 	margin: var(--margin);
 
 	display: grid;
