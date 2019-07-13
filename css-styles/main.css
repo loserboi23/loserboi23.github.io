@@ -27,8 +27,9 @@
 	--primary: #1F9212;
 	--secondary: #2B718B;
 	--tritary: rgb(23, 139, 139);
+	--heading: rgb(88, 88, 88);
 
-	--heading: white;
+	--paper: rgb(255, 202, 110);
 
 }
 
@@ -177,6 +178,7 @@ main
 {
 	display: grid;
 	grid-template-columns: 2fr 8fr;
+	background-color: var(--paper);
 }
 
 h1
