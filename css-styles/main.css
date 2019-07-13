@@ -51,8 +51,7 @@ nav
 	font-size: 30px;
 	display: grid;
 	grid-template-columns: repeat(10,1fr);
-
-	max-width: 1338px;
+	max-width: 100%;
 	max-height: 34.5px;
 	
 }
