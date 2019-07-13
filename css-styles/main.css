@@ -101,13 +101,45 @@ nav
 	object-fit: scale-down;
 }
 
+.project-main
+{
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-template-rows: auto;
+}
 .project-card
 {
+	width: calc(100% - 2*var(--padding) - 2*(--margin));
+	height: calc(100% - 2*var(--padding) - 2*(--margin));
 	max-width: 500px;
 	max-height: 800px;
 	background-color: white;
 	padding: var(--padding);
+	margin: var(--margin);
 	box-shadow: 0 8px 12px 0 rgba(14, 14, 14, 0.9);
+	display:grid;
+	grid-template-rows: 1fr 2fr 1fr; 
+	outline: var(--border) outset black;
+}
+
+.project-image
+{
+	height: 100%;
+	width: 100%; 
+
+}
+
+.project-description
+{
+	font-size: 25px;
+	overflow: scroll;
+	border: var(--border) inset black;
+}
+
+.project-links
+{
+	display: grid;
+
 }
 
 .project-card img
@@ -115,23 +147,19 @@ nav
 	height: 100%;
 	width: 100%;
 	max-width: 800px;
-	max-height: 500px;
+	max-height: 300px;
 }
 
-.project-card p
-{
-	font-size: 15px;
-}
 
 .project-card button
 {
 	color: white;
 	font-size: 40px;
 	background-color: blue;
-	height: 100%;
-	width: 100%;
+	height: calc(100% - 2*var(--padding));
+	width: calc(100% - 2*var(--padding));
 	display: inline-block;
-	padding:var(--padding);
+	padding: var(--padding);
 	border-radius: 500px;
 }
 main 
